@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#161412" />
+    <link rel="canonical" href="https://whitelight61.github.io/" />
     <meta
       name="description"
       content="Cody Boomer (Caveman Actual) rebuilds Shopify stores on Theme 2.0 from Austin, TX. Starter $300 / 3 days. Rebuild $1,200 / 7 days. Plus $2,400 / 14 days. US-remote."
@@ -15,7 +17,9 @@
       content="I rebuild Shopify stores on Theme 2.0. Austin / US-remote. Rebuild is $1,200 in 7 days. No dropshipping. No 40-app stacks."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/hearth/hero.jpg" />
+    <meta property="og:url" content="https://whitelight61.github.io/" />
+    <meta property="og:image" content="https://whitelight61.github.io/hearth/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Shopify 2.0 rebuild in 7 days — Cody Boomer, Austin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,9 +28,32 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/assets/index-PAcFCk8H.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B7Bv2wqq.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-B7Bv2wqq.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Shopify Theme 2.0 rebuild",
+        "provider": {
+          "@type": "Person",
+          "name": "Cody Boomer",
+          "alternateName": "Caveman Actual",
+          "url": "https://whitelight61.github.io/",
+          "email": "CavemanXActual@proton.me",
+          "address": { "@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US" }
+        },
+        "areaServed": "US",
+        "url": "https://whitelight61.github.io/",
+        "offers": [
+          { "@type": "Offer", "name": "Starter", "price": "300", "priceCurrency": "USD", "description": "Theme 2.0 install and cleanup, 3 days" },
+          { "@type": "Offer", "name": "Rebuild", "price": "1200", "priceCurrency": "USD", "description": "Full Theme 2.0 rebuild with speed and CRO pass, 7 days" },
+          { "@type": "Offer", "name": "Plus", "price": "2400", "priceCurrency": "USD", "description": "Rebuild plus extra templates and content migration, 14 days" }
+        ]
+      }
+    </script>
   </head>
   <body>
+    <div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
     <a class="skip" href="#work">Skip to offer</a>
 
     <header class="site-header">
@@ -36,40 +63,43 @@
           <span>Cody Boomer · Austin, TX</span>
         </a>
         <nav class="nav" aria-label="Page">
-          <a href="#compare">1.0 / 2.0</a>
-          <a href="#hearth">Demo</a>
-          <a href="#offers">Offers</a>
-          <a href="#book">Book</a>
+          <a href="#compare" data-spy="compare">1.0 / 2.0</a>
+          <a href="#hearth" data-spy="hearth">Demo</a>
+          <a href="#process" data-spy="process">Process</a>
+          <a href="#offers" data-spy="offers">Offers</a>
+          <a href="#book" data-spy="book">Book</a>
         </nav>
-        <a class="btn btn-solid header-cta" href="#book">Send the store</a>
+        <a class="btn btn-solid header-cta magnetic" href="#book">Send the store</a>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero" id="hero-stage">
         <img
           class="hero-photo"
           src="/hearth/hero.jpg"
           alt="Hearth Table sample: speckled stoneware bowl on an oak board with linen. Our 2.0 rebuild, not a client."
           width="1600"
           height="1066"
+          fetchpriority="high"
         />
         <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-spot" aria-hidden="true"></div>
         <div class="wrap hero-copy">
-          <p class="chip">Sample photography · Hearth Table is not a client</p>
+          <p class="chip">Sample photography · Hearth Table is ours, not a client</p>
           <h1>
             I rebuild Shopify stores on Theme&nbsp;2.0.
             <em>Seven days. Twelve hundred dollars.</em>
           </h1>
           <p class="lede">
-            I’m Cody Boomer. I work as Caveman Actual. If your store is stuck on a vintage
-            theme, drowning in apps, or slow enough that buyers bounce — I rebuild it on
-            a current 2.0 theme, cut the junk, and ship a store you can actually run.
+            I’m Cody Boomer — Caveman Actual. Stuck on a vintage theme, buried in
+            apps, or slow enough that buyers bounce? I rebuild it on current 2.0,
+            cut the junk, and hand you a store you can run yourself.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-solid" href="#book">Email me the store URL</a>
+            <a class="btn btn-solid magnetic" href="#book">Email me the store URL</a>
             <a
-              class="btn btn-ghost"
+              class="btn btn-ghost magnetic"
               href="https://www.fiverr.com/caveman_actual/rebuild-your-shopify-store-on-theme-20-with-speed-and-cro-in-7-days"
               rel="noopener noreferrer"
               target="_blank"
@@ -77,18 +107,34 @@
             >
           </div>
           <p class="hero-note">
-            Offers are locked. I don’t do dropshipping stores. I don’t install forty apps
-            and call it a rebuild. Austin / US-remote.
+            Offers are locked. No dropshipping. No forty-app “rebuilds.”
+            Austin, TX — US-remote.
           </p>
         </div>
+        <button type="button" class="hero-scroll" data-scroll-to="#strip-facts" aria-label="Scroll to facts">
+          <span></span>
+        </button>
       </section>
 
-      <section class="strip rise" aria-label="Facts">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Theme 2.0 sections</span><span>·</span><span>speed pass</span><span>·</span>
+          <span>CRO, not a popup app</span><span>·</span><span>app diet</span><span>·</span>
+          <span>metafields over apps</span><span>·</span><span>no dropshipping</span><span>·</span>
+          <span>7 days</span><span>·</span><span>$1,200</span><span>·</span>
+          <span>Theme 2.0 sections</span><span>·</span><span>speed pass</span><span>·</span>
+          <span>CRO, not a popup app</span><span>·</span><span>app diet</span><span>·</span>
+          <span>metafields over apps</span><span>·</span><span>no dropshipping</span><span>·</span>
+          <span>7 days</span><span>·</span><span>$1,200</span><span>·</span>
+        </div>
+      </div>
+
+      <section id="strip-facts" class="strip rise" aria-label="Facts">
         <div class="wrap strip-grid">
           <p><strong>Austin, TX</strong><span>US-remote. Same working day as a US store.</span></p>
           <p><strong>First person</strong><span>You talk to me. I do the theme work.</span></p>
           <p><strong>No fake book</strong><span>No invented clients. No bought reviews.</span></p>
-          <p><strong>The demo is the proof</strong><span>Hearth Table. Sample. You can click it.</span></p>
+          <p><strong>The demo is the proof</strong><span>Hearth Table. Sample. Click it yourself.</span></p>
         </div>
       </section>
 
@@ -97,9 +143,9 @@
           <p class="eyebrow">Drag the seam · same catalog, two themes</p>
           <h2>Dated Online Store 1.0 versus a Theme 2.0 rebuild.</h2>
           <p class="section-lede">
-            Left is the store you already know: slideshow, sale badges, a reviews app,
-            a popup. Right is Hearth Table on 2.0 — native sections, the photography
-            doing the work. Same three SKUs. No invented clients. Drag to compare.
+            Left is the store you already know: slideshow, sale badges, a reviews
+            app, a popup. Right is Hearth Table on 2.0 — native sections, the
+            photography doing the work. Same three SKUs. Drag to compare.
           </p>
         </div>
 
@@ -113,7 +159,7 @@
                   <span>Home · Shop · Sale · Blog · Contact</span>
                 </div>
                 <div class="os1-slide">
-                  <img src="/hearth/hero.jpg" alt="" />
+                  <img src="/hearth/hero.jpg" alt="" width="1600" height="1066" loading="lazy" />
                   <div class="os1-slide-copy">
                     <p>BIGGEST SALE OF THE YEAR</p>
                     <button type="button" tabindex="-1">SHOP NOW</button>
@@ -121,9 +167,9 @@
                   <span class="os1-dots">● ○ ○</span>
                 </div>
                 <div class="os1-grid">
-                  <figure><img src="/hearth/board.jpg" alt="" /><i>SALE</i><figcaption>Oak board<br />~~$88~~ $49</figcaption></figure>
-                  <figure><img src="/hearth/runner.jpg" alt="" /><i>SALE</i><figcaption>Linen runner<br />~~$64~~ $32</figcaption></figure>
-                  <figure><img src="/hearth/bowl.jpg" alt="" /><i>-40%</i><figcaption>Stone bowl<br />~~$54~~ $29</figcaption></figure>
+                  <figure><img src="/hearth/board.jpg" alt="" width="800" height="533" loading="lazy" /><i>SALE</i><figcaption>Oak board<br />~~$88~~ $49</figcaption></figure>
+                  <figure><img src="/hearth/runner.jpg" alt="" width="800" height="533" loading="lazy" /><i>SALE</i><figcaption>Linen runner<br />~~$64~~ $32</figcaption></figure>
+                  <figure><img src="/hearth/bowl.jpg" alt="" width="720" height="720" loading="lazy" /><i>-40%</i><figcaption>Stone bowl<br />~~$54~~ $29</figcaption></figure>
                 </div>
                 <div class="os1-apps">
                   <div class="os1-reviews">★★★★★ Reviews app</div>
@@ -141,13 +187,13 @@
                   <span>Shop · Journal · Cart</span>
                 </div>
                 <div class="os2-hero">
-                  <img src="/hearth/hero.jpg" alt="" />
+                  <img src="/hearth/hero.jpg" alt="" width="1600" height="1066" loading="lazy" />
                   <p>Stoneware for a quieter table.</p>
                 </div>
                 <div class="os2-grid">
-                  <figure><img src="/hearth/board.jpg" alt="" /><figcaption>Oak board<span>Sample SKU</span></figcaption></figure>
-                  <figure><img src="/hearth/runner.jpg" alt="" /><figcaption>Linen runner<span>Sample SKU</span></figcaption></figure>
-                  <figure><img src="/hearth/bowl.jpg" alt="" /><figcaption>Stone bowl<span>Sample SKU</span></figcaption></figure>
+                  <figure><img src="/hearth/board.jpg" alt="" width="800" height="533" loading="lazy" /><figcaption>Oak board<span>Sample SKU</span></figcaption></figure>
+                  <figure><img src="/hearth/runner.jpg" alt="" width="800" height="533" loading="lazy" /><figcaption>Linen runner<span>Sample SKU</span></figcaption></figure>
+                  <figure><img src="/hearth/bowl.jpg" alt="" width="720" height="720" loading="lazy" /><figcaption>Stone bowl<span>Sample SKU</span></figcaption></figure>
                 </div>
               </div>
             </div>
@@ -169,18 +215,14 @@
       <section id="hearth" class="demo rise">
         <div class="wrap demo-head">
           <p class="eyebrow">Click-through sample · homepage + PDP</p>
-          <h2>Hearth Table is ours. I built it to show the work.</h2>
+          <h2>Hearth Table is ours. Click through it.</h2>
           <p>
-            Hearth Table is a sample Shopify 2.0 rebuild I keep so you can see a Theme
-            2.0 storefront without me pointing at someone else’s live shop and implying
-            they hired me. It is not a client. It is not a testimonial. It is the demo
-            of the Rebuild: editorial hospitality / tableware, native sections,
-            metafields instead of app soup, a product page that actually sells the
-            object.
-          </p>
-          <p>
-            If you want a walkthrough, say so in the form. I’ll show you the sample —
-            and then we’ll talk about your store, not a brand I invented for this page.
+            It’s a sample Shopify 2.0 build I keep so you can see the work without
+            me borrowing someone else’s storefront and implying they hired me. Not
+            a client, not a testimonial — it’s the Rebuild itself: editorial
+            tableware, native sections, metafields instead of app soup, a product
+            page built to actually sell the object. Want a walkthrough? Say so in
+            the form, and then we’ll talk about your store.
           </p>
         </div>
 
@@ -200,7 +242,7 @@
 
             <div class="ht-view is-on" data-view="home">
               <div class="ht-home-hero">
-                <img src="/hearth/hero.jpg" alt="Stoneware bowl on oak and linen, Hearth Table sample." />
+                <img src="/hearth/hero.jpg" alt="Stoneware bowl on oak and linen, Hearth Table sample." width="1600" height="1066" loading="lazy" />
                 <div>
                   <p>Stoneware for a quieter table.</p>
                   <small>Theme 2.0 sections. No review widget. No countdown app.</small>
@@ -208,17 +250,17 @@
               </div>
               <div class="ht-cards">
                 <button type="button" class="ht-card" data-ht="board">
-                  <img src="/hearth/board.jpg" alt="Oak serving board, sample SKU." />
+                  <img src="/hearth/board.jpg" alt="Oak serving board, sample SKU." width="800" height="533" loading="lazy" />
                   <b>Oak board</b>
                   <em>Sample SKU · open PDP</em>
                 </button>
                 <button type="button" class="ht-card" data-ht="runner">
-                  <img src="/hearth/runner.jpg" alt="Linen table runner, sample SKU." />
+                  <img src="/hearth/runner.jpg" alt="Linen table runner, sample SKU." width="800" height="533" loading="lazy" />
                   <b>Linen runner</b>
                   <em>Sample SKU · open PDP</em>
                 </button>
                 <button type="button" class="ht-card" data-ht="bowl">
-                  <img src="/hearth/bowl.jpg" alt="Speckled stoneware bowl, sample SKU." />
+                  <img src="/hearth/bowl.jpg" alt="Speckled stoneware bowl, sample SKU." width="720" height="720" loading="lazy" />
                   <b>Stone bowl</b>
                   <em>Sample SKU · open PDP</em>
                 </button>
@@ -229,8 +271,8 @@
               <button type="button" class="ht-back" data-ht="home">← Shop</button>
               <div class="ht-pdp">
                 <div class="ht-gallery">
-                  <img src="/hearth/board.jpg" alt="Oak serving board, sample." />
-                  <img src="/hearth/detail.jpg" alt="Oak grain against linen, sample detail." />
+                  <img src="/hearth/board.jpg" alt="Oak serving board, sample." width="800" height="533" loading="lazy" />
+                  <img src="/hearth/detail.jpg" alt="Oak grain against linen, sample detail." width="800" height="533" loading="lazy" />
                 </div>
                 <div class="ht-buy">
                   <p class="ht-flag">Sample SKU · not for sale</p>
@@ -245,8 +287,8 @@
               <button type="button" class="ht-back" data-ht="home">← Shop</button>
               <div class="ht-pdp">
                 <div class="ht-gallery">
-                  <img src="/hearth/runner.jpg" alt="Linen runner, sample." />
-                  <img src="/hearth/detail.jpg" alt="Linen weave, sample detail." />
+                  <img src="/hearth/runner.jpg" alt="Linen runner, sample." width="800" height="533" loading="lazy" />
+                  <img src="/hearth/detail.jpg" alt="Linen weave, sample detail." width="800" height="533" loading="lazy" />
                 </div>
                 <div class="ht-buy">
                   <p class="ht-flag">Sample SKU · not for sale</p>
@@ -261,8 +303,8 @@
               <button type="button" class="ht-back" data-ht="home">← Shop</button>
               <div class="ht-pdp">
                 <div class="ht-gallery">
-                  <img src="/hearth/bowl.jpg" alt="Speckled stoneware bowl, sample." />
-                  <img src="/hearth/detail.jpg" alt="Glaze detail, sample." />
+                  <img src="/hearth/bowl.jpg" alt="Speckled stoneware bowl, sample." width="720" height="720" loading="lazy" />
+                  <img src="/hearth/detail.jpg" alt="Glaze detail, sample." width="800" height="533" loading="lazy" />
                 </div>
                 <div class="ht-buy">
                   <p class="ht-flag">Sample SKU · not for sale</p>
@@ -277,14 +319,44 @@
         </div>
       </section>
 
+      <section id="process" class="process rise">
+        <div class="wrap">
+          <p class="eyebrow">The Rebuild · day by day</p>
+          <h2>Seven days. No mystery about where they go.</h2>
+          <p class="section-lede">
+            This is the $1,200 offer, broken into what actually happens. Starter
+            and Plus compress or extend this same shape.
+          </p>
+        </div>
+        <div class="wrap">
+          <ol class="steps">
+            <li class="step">
+              <span class="step-n">01</span>
+              <h3>Days 1–2 · Audit &amp; structure</h3>
+              <p>I pull your catalog, theme, and app list apart. You get a punch list before I touch anything live — including whether your catalog or offer is the real problem.</p>
+            </li>
+            <li class="step">
+              <span class="step-n">02</span>
+              <h3>Days 3–5 · Build</h3>
+              <p>Home, collection, product, and cart rebuilt on native 2.0 sections. Metafields replace the apps that were only holding your layout together.</p>
+            </li>
+            <li class="step">
+              <span class="step-n">03</span>
+              <h3>Days 6–7 · Speed, CRO, handoff</h3>
+              <p>Compression pass, cart friction fixed, product-page hierarchy tightened. You get the theme editor back — no lock-in, no dependency on me.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
       <section id="offers" class="offers rise">
         <div class="wrap">
           <p class="eyebrow">Locked pricing · calendar days, not “business days later”</p>
           <h2>Three offers. Rebuild is the product.</h2>
           <p class="section-lede">
-            Prices and timelines are the deal. If the store is a mess of custom apps and
-            ten years of theme liquid, I’ll say so before we start — I won’t pretend a
-            3-day Starter can swallow that.
+            Prices and timelines are the deal. Ten years of theme liquid and a
+            custom app pile? I’ll say so before we start — a 3-day Starter won’t
+            swallow that.
           </p>
 
           <div class="bag">
@@ -317,7 +389,7 @@
                 <li>App diet: I remove what the theme can do natively</li>
               </ul>
               <div class="sku-pay">
-                <a class="btn btn-solid" href="#book" data-offer="Rebuild · $1,200 / 7 days">Pay $1,200 · book it</a>
+                <a class="btn btn-solid magnetic" href="#book" data-offer="Rebuild · $1,200 / 7 days">Pay $1,200 · book it</a>
                 <a
                   class="btn btn-ghost"
                   href="https://www.fiverr.com/caveman_actual/rebuild-your-shopify-store-on-theme-20-with-speed-and-cro-in-7-days"
@@ -365,8 +437,37 @@
               <li>No 40-app stacks. If Shopify 2.0 sections can do it, the app goes.</li>
               <li>No fake testimonials, no invented clients, no “as seen in” bars I didn’t earn.</li>
               <li>No overnight miracles. Three, seven, or fourteen days — that’s the calendar.</li>
-              <li>No pretending a sample is a case study. Read the Hearth Table note above.</li>
+              <li>No pretending a sample is a case study. Hearth Table is ours, not proof of a client outcome.</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq rise">
+        <div class="wrap">
+          <p class="eyebrow">Before you email me</p>
+          <h2>Questions I actually get</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary><span>What if my theme is ancient or heavily customized?</span><i aria-hidden="true"></i></summary>
+              <p>Say so in the form. If it’s a decade of custom liquid and legacy apps, Starter won’t cover it — I’ll tell you that up front and point you at Plus, or tell you honestly to walk.</p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Do I lose all my apps?</span><i aria-hidden="true"></i></summary>
+              <p>Only the ones the 2.0 theme can do natively — sliders, basic upsells, layout hacks. Anything doing real work, like subscriptions or live inventory, stays exactly where it is.</p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Is Hearth Table for sale?</span><i aria-hidden="true"></i></summary>
+              <p>No. It’s our internal sample, not a live store. Click through it all you want — you can’t check out with the bowl.</p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Fiverr or direct — what’s the difference?</span><i aria-hidden="true"></i></summary>
+              <p>Same price, same work, same seven days. Fiverr gives you their payment protection and messaging. Direct means the email goes straight to my Proton inbox and we skip Fiverr’s order flow.</p>
+            </details>
+            <details class="faq-item">
+              <summary><span>What’s not included?</span><i aria-hidden="true"></i></summary>
+              <p>New photography, copywriting, or a custom app I’d have to build from scratch. I rebuild the theme layer — home, collection, product, cart — and cut what’s slowing it down.</p>
+            </details>
           </div>
         </div>
       </section>
@@ -452,7 +553,7 @@
                 placeholder="Vintage theme, app pile, slow PDP, whatever is true."
               ></textarea>
             </label>
-            <button class="btn btn-solid" type="submit">Send to Proton</button>
+            <button class="btn btn-solid magnetic" type="submit">Send to Proton</button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -460,19 +561,28 @@
     </main>
 
     <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <p>
-          Cody Boomer · Caveman Actual · Austin, Texas · US-remote ·
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <strong>Caveman Actual</strong>
+          <p>Cody Boomer · Austin, Texas · US-remote</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-h">Contact</p>
           <a href="mailto:CavemanXActual@proton.me">CavemanXActual@proton.me</a>
-        </p>
-        <p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-h">Buy it direct</p>
           <a
             href="https://www.fiverr.com/caveman_actual/rebuild-your-shopify-store-on-theme-20-with-speed-and-cro-in-7-days"
             rel="noopener noreferrer"
             target="_blank"
             >Fiverr: rebuild on Theme 2.0 in 7 days</a
           >
-        </p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-h">The fine print</p>
+          <p class="footer-fine">Hearth Table is an internal sample, not a client. No fake reviews on this page — none.</p>
+        </div>
       </div>
     </footer>
 
@@ -485,6 +595,5 @@
         >Fiverr</a
       >
     </div>
-
   </body>
 </html>
