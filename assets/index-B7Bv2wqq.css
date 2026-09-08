@@ -189,3 +189,11 @@ body::before{content:"";pointer-events:none;z-index:1;opacity:.05;mix-blend-mode
   .ht-view[data-view]:not(.is-on){display:none}
   .demo{padding-bottom:5.5rem}
 }
+
+/* --- Hearth sample: demote marketing dock --- */
+html.ht-active .dock{display:none !important}
+@media (width<840px){
+  html.ht-active .ht-sticky-atc{bottom:max(.7rem, env(safe-area-inset-bottom))}
+  html.ht-active .demo{padding-bottom:2.5rem}
+  html.ht-active .site-footer{padding-bottom:2rem}
+}
