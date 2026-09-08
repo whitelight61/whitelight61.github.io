@@ -87,16 +87,32 @@
         <div class="hero-spot" aria-hidden="true"></div>
         <div class="wrap hero-copy">
           <p class="chip">Sample photography · Hearth Table is ours, not a client</p>
-          <h1>
-            I rebuild Shopify stores on Theme&nbsp;2.0.
-            <em>Seven days. Twelve hundred dollars.</em>
-          </h1>
-          <p class="lede">
-            I’m Cody Boomer — Caveman Actual. Stuck on a vintage theme, buried in
-            apps, or slow enough that buyers bounce? I rebuild it on current 2.0,
-            cut the junk, and hand you a store you can run yourself.
-          </p>
+          <p class="hero-mark">Hearth Table</p>
+          <h1>Stoneware for a quieter table.</h1>
           <div class="hero-actions">
+            <a class="btn btn-solid magnetic" href="#hearth">Open the sample store</a>
+            <a class="btn btn-ghost magnetic" href="#pitch">See the Rebuild</a>
+          </div>
+        </div>
+        <button type="button" class="hero-scroll" data-scroll-to="#strip-facts" aria-label="Scroll to facts">
+          <span></span>
+        </button>
+      </section>
+
+
+
+      <section id="pitch" class="pitch rise" aria-label="Rebuild pitch">
+        <div class="wrap pitch-grid">
+          <div>
+            <p class="eyebrow">Cody Boomer · Caveman Actual · Austin</p>
+            <h2>I rebuild Shopify stores on Theme&nbsp;2.0.</h2>
+            <p class="section-lede">
+              Seven days. Twelve hundred dollars. Stuck on a vintage theme, buried in
+              apps, or slow enough that buyers bounce? I rebuild it on current 2.0,
+              cut the junk, and hand you a store you can run yourself.
+            </p>
+          </div>
+          <div class="pitch-actions">
             <a class="btn btn-solid magnetic" href="#book">Email me the store URL</a>
             <a
               class="btn btn-ghost magnetic"
@@ -105,29 +121,12 @@
               target="_blank"
               >Buy the Rebuild on Fiverr</a
             >
+            <p class="pitch-note">
+              Offers are locked. No dropshipping. No forty-app “rebuilds.” US-remote.
+            </p>
           </div>
-          <p class="hero-note">
-            Offers are locked. No dropshipping. No forty-app “rebuilds.”
-            Austin, TX — US-remote.
-          </p>
         </div>
-        <button type="button" class="hero-scroll" data-scroll-to="#strip-facts" aria-label="Scroll to facts">
-          <span></span>
-        </button>
       </section>
-
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>Theme 2.0 sections</span><span>·</span><span>speed pass</span><span>·</span>
-          <span>CRO, not a popup app</span><span>·</span><span>app diet</span><span>·</span>
-          <span>metafields over apps</span><span>·</span><span>no dropshipping</span><span>·</span>
-          <span>7 days</span><span>·</span><span>$1,200</span><span>·</span>
-          <span>Theme 2.0 sections</span><span>·</span><span>speed pass</span><span>·</span>
-          <span>CRO, not a popup app</span><span>·</span><span>app diet</span><span>·</span>
-          <span>metafields over apps</span><span>·</span><span>no dropshipping</span><span>·</span>
-          <span>7 days</span><span>·</span><span>$1,200</span><span>·</span>
-        </div>
-      </div>
 
       <section id="strip-facts" class="strip rise" aria-label="Facts">
         <div class="wrap strip-grid">
@@ -188,12 +187,15 @@
                 </div>
                 <div class="os2-hero">
                   <img src="/hearth/hero.jpg" alt="" width="1600" height="1066" loading="lazy" />
-                  <p>Stoneware for a quieter table.</p>
+                  <div class="os2-hero-copy">
+                    <small>The table, quietly</small>
+                    <p>Stoneware for a quieter table.</p>
+                  </div>
                 </div>
                 <div class="os2-grid">
-                  <figure><img src="/hearth/board.jpg" alt="" width="800" height="533" loading="lazy" /><figcaption>Oak board<span>Sample SKU</span></figcaption></figure>
-                  <figure><img src="/hearth/runner.jpg" alt="" width="800" height="533" loading="lazy" /><figcaption>Linen runner<span>Sample SKU</span></figcaption></figure>
-                  <figure><img src="/hearth/bowl.jpg" alt="" width="720" height="720" loading="lazy" /><figcaption>Stone bowl<span>Sample SKU</span></figcaption></figure>
+                  <figure><img src="/hearth/board.jpg" alt="" width="800" height="533" loading="lazy" /><figcaption>Oak board<span>$88 · sample</span></figcaption></figure>
+                  <figure><img src="/hearth/runner.jpg" alt="" width="800" height="533" loading="lazy" /><figcaption>Linen runner<span>$64 · sample</span></figcaption></figure>
+                  <figure><img src="/hearth/bowl.jpg" alt="" width="720" height="720" loading="lazy" /><figcaption>Stone bowl<span>$54 · sample</span></figcaption></figure>
                 </div>
               </div>
             </div>
@@ -231,11 +233,11 @@
             <div class="ht-chrome">
               <p class="ht-flag">hearthtable.sample · SAMPLE · NOT A CLIENT</p>
               <div class="ht-nav">
-                <button type="button" class="is-on" data-ht="home" data-ht-nav="home">Hearth Table</button>
-                <div>
+                <button type="button" class="ht-mark is-on" data-ht="home" data-ht-nav="home">Hearth Table</button>
+                <div class="ht-nav-links">
                   <button type="button" data-ht="home" data-ht-nav="home">Shop</button>
                   <span>Journal</span>
-                  <span>Cart</span>
+                  <span>Cart <i class="ht-cart-count" id="ht-cart-count" aria-hidden="true">0</i></span>
                 </div>
               </div>
             </div>
@@ -243,42 +245,84 @@
             <div class="ht-view is-on" data-view="home">
               <div class="ht-home-hero">
                 <img src="/hearth/hero.jpg" alt="Stoneware bowl on oak and linen, Hearth Table sample." width="1600" height="1066" loading="lazy" />
-                <div>
-                  <p>Stoneware for a quieter table.</p>
-                  <small>Theme 2.0 sections. No review widget. No countdown app.</small>
+                <div class="ht-home-hero-copy">
+                  <p class="ht-home-kicker">The table, quietly</p>
+                  <p class="ht-home-title">Stoneware for a quieter table.</p>
+                  <button type="button" class="ht-home-cta" data-scroll-shop>Shop the collection</button>
                 </div>
               </div>
-              <div class="ht-cards">
-                <button type="button" class="ht-card" data-ht="board">
-                  <img src="/hearth/board.jpg" alt="Oak serving board, sample SKU." width="800" height="533" loading="lazy" />
-                  <b>Oak board</b>
-                  <em>Sample SKU · open PDP</em>
-                </button>
-                <button type="button" class="ht-card" data-ht="runner">
-                  <img src="/hearth/runner.jpg" alt="Linen table runner, sample SKU." width="800" height="533" loading="lazy" />
-                  <b>Linen runner</b>
-                  <em>Sample SKU · open PDP</em>
-                </button>
-                <button type="button" class="ht-card" data-ht="bowl">
-                  <img src="/hearth/bowl.jpg" alt="Speckled stoneware bowl, sample SKU." width="720" height="720" loading="lazy" />
-                  <b>Stone bowl</b>
-                  <em>Sample SKU · open PDP</em>
-                </button>
+
+              <div class="ht-collection" id="ht-shop">
+                <div class="ht-collection-head">
+                  <p class="ht-collection-eyebrow">Shop</p>
+                  <h3 class="ht-collection-title">Three objects. Same light.</h3>
+                  <p class="ht-collection-lede">Oak, linen, stoneware — sample SKUs so you can feel the product page without a checkout.</p>
+                </div>
+                <div class="ht-cards">
+                  <button type="button" class="ht-card" data-ht="board">
+                    <span class="ht-card-media"><img src="/hearth/board-primary.jpg" alt="Oak serving board, sample SKU." width="800" height="1000" loading="lazy" /></span>
+                    <span class="ht-card-body">
+                      <b>Oak board</b>
+                      <em>Pale oak · oil finish</em>
+                      <span class="ht-card-price">$88 <small>sample</small></span>
+                    </span>
+                  </button>
+                  <button type="button" class="ht-card" data-ht="runner">
+                    <span class="ht-card-media"><img src="/hearth/runner-primary.jpg" alt="Linen table runner, sample SKU." width="800" height="1000" loading="lazy" /></span>
+                    <span class="ht-card-body">
+                      <b>Linen runner</b>
+                      <em>Oatmeal flax · hemmed</em>
+                      <span class="ht-card-price">$64 <small>sample</small></span>
+                    </span>
+                  </button>
+                  <button type="button" class="ht-card" data-ht="bowl">
+                    <span class="ht-card-media"><img src="/hearth/bowl-primary.jpg" alt="Speckled stoneware bowl, sample SKU." width="800" height="1000" loading="lazy" /></span>
+                    <span class="ht-card-body">
+                      <b>Stone bowl</b>
+                      <em>Ash glaze · iron speck</em>
+                      <span class="ht-card-price">$54 <small>sample</small></span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="ht-editorial">
+                <figure class="ht-editorial-fig">
+                  <img src="/hearth/detail.jpg" alt="Oak grain against linen, sample detail." width="800" height="533" loading="lazy" />
+                </figure>
+                <div class="ht-editorial-copy">
+                  <p class="ht-collection-eyebrow">Native sections</p>
+                  <h3>Photography does the work. Apps don’t.</h3>
+                  <p>No review widget. No countdown. Metafields for material and care. This is what a Theme 2.0 rebuild looks like when the object is the offer.</p>
+                </div>
               </div>
             </div>
 
             <div class="ht-view" data-view="board">
               <button type="button" class="ht-back" data-ht="home">← Shop</button>
               <div class="ht-pdp">
-                <div class="ht-gallery">
-                  <img src="/hearth/board.jpg" alt="Oak serving board, sample." width="800" height="533" loading="lazy" />
-                  <img src="/hearth/detail.jpg" alt="Oak grain against linen, sample detail." width="800" height="533" loading="lazy" />
+                <div class="ht-gallery" data-gallery>
+                  <div class="ht-gallery-main">
+                    <img class="ht-gallery-primary" src="/hearth/board-primary.jpg" alt="Oak serving board, sample." width="800" height="1000" data-primary style="object-position:52% 45%" />
+                  </div>
+                  <div class="ht-thumbs" role="tablist" aria-label="Product images">
+                    <button type="button" class="ht-thumb is-on" data-src="/hearth/board-primary.jpg" data-alt="Oak serving board, sample." aria-label="Main board"><img src="/hearth/board-primary.jpg" alt="" width="800" height="1000" loading="lazy" /></button>
+                    <button type="button" class="ht-thumb" data-src="/hearth/board-detail.jpg" data-alt="Oak grain detail, sample." aria-label="Grain detail"><img src="/hearth/board-detail.jpg" alt="" width="720" height="900" loading="lazy" /></button>
+                    <button type="button" class="ht-thumb" data-src="/hearth/board-context.jpg" data-alt="Board in table setting, sample." aria-label="On the table"><img src="/hearth/board-context.jpg" alt="" width="720" height="900" loading="lazy" /></button>
+                  </div>
                 </div>
                 <div class="ht-buy">
-                  <p class="ht-flag">Sample SKU · not for sale</p>
+                  <p class="ht-sku-flag">Sample SKU · not for sale</p>
                   <h3>Oak board</h3>
-                  <p>Thick pale oak. Oil finish. The object, then the linen, then the table — metafields for material and care instead of an app.</p>
-                  <button type="button" class="btn btn-solid" data-ht-cart>Add to cart</button>
+                  <p class="ht-material-line">Thick pale oak. Oil finish. Made to hold the meal, not the marketing.</p>
+                  <p class="ht-price"><span>$88</span><small>sample · USD</small></p>
+                  <button type="button" class="btn btn-solid ht-atc" data-ht-cart>Add to cart</button>
+                  <p class="ht-ship">Ships in a quiet sleeve. Sample store — checkout is intentionally dead.</p>
+                  <dl class="ht-meta">
+                    <div><dt>Material</dt><dd>Pale oak, food-safe oil</dd></div>
+                    <div><dt>Care</dt><dd>Hand wash · oil when dry</dd></div>
+                    <div><dt>Made for</dt><dd>Serving · the center of the table</dd></div>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -286,15 +330,28 @@
             <div class="ht-view" data-view="runner">
               <button type="button" class="ht-back" data-ht="home">← Shop</button>
               <div class="ht-pdp">
-                <div class="ht-gallery">
-                  <img src="/hearth/runner.jpg" alt="Linen runner, sample." width="800" height="533" loading="lazy" />
-                  <img src="/hearth/detail.jpg" alt="Linen weave, sample detail." width="800" height="533" loading="lazy" />
+                <div class="ht-gallery" data-gallery>
+                  <div class="ht-gallery-main">
+                    <img class="ht-gallery-primary" src="/hearth/runner-primary.jpg" alt="Linen runner, sample." width="800" height="1000" data-primary style="object-position:50% 40%" />
+                  </div>
+                  <div class="ht-thumbs" role="tablist" aria-label="Product images">
+                    <button type="button" class="ht-thumb is-on" data-src="/hearth/runner-primary.jpg" data-alt="Linen runner, sample." aria-label="Main runner"><img src="/hearth/runner-primary.jpg" alt="" width="800" height="1000" loading="lazy" /></button>
+                    <button type="button" class="ht-thumb" data-src="/hearth/runner-detail.jpg" data-alt="Linen weave detail, sample." aria-label="Weave detail"><img src="/hearth/runner-detail.jpg" alt="" width="720" height="900" loading="lazy" /></button>
+                    <button type="button" class="ht-thumb" data-src="/hearth/runner-context.jpg" data-alt="Runner in table setting, sample." aria-label="On the table"><img src="/hearth/runner-context.jpg" alt="" width="720" height="900" loading="lazy" /></button>
+                  </div>
                 </div>
                 <div class="ht-buy">
-                  <p class="ht-flag">Sample SKU · not for sale</p>
+                  <p class="ht-sku-flag">Sample SKU · not for sale</p>
                   <h3>Linen runner</h3>
-                  <p>Oatmeal flax, a visible weave, hemmed. A 2.0 section, not a page-builder block with six apps hanging off it.</p>
-                  <button type="button" class="btn btn-solid" data-ht-cart>Add to cart</button>
+                  <p class="ht-material-line">Oatmeal flax, a visible weave, hemmed by hand feel — not a page-builder block.</p>
+                  <p class="ht-price"><span>$64</span><small>sample · USD</small></p>
+                  <button type="button" class="btn btn-solid ht-atc" data-ht-cart>Add to cart</button>
+                  <p class="ht-ship">Softens with every wash. Sample store — checkout is intentionally dead.</p>
+                  <dl class="ht-meta">
+                    <div><dt>Material</dt><dd>100% flax linen · oatmeal</dd></div>
+                    <div><dt>Care</dt><dd>Cold wash · line dry</dd></div>
+                    <div><dt>Made for</dt><dd>Long tables · quiet dinners</dd></div>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -302,16 +359,36 @@
             <div class="ht-view" data-view="bowl">
               <button type="button" class="ht-back" data-ht="home">← Shop</button>
               <div class="ht-pdp">
-                <div class="ht-gallery">
-                  <img src="/hearth/bowl.jpg" alt="Speckled stoneware bowl, sample." width="720" height="720" loading="lazy" />
-                  <img src="/hearth/detail.jpg" alt="Glaze detail, sample." width="800" height="533" loading="lazy" />
+                <div class="ht-gallery" data-gallery>
+                  <div class="ht-gallery-main">
+                    <img class="ht-gallery-primary" src="/hearth/bowl-primary.jpg" alt="Speckled stoneware bowl, sample." width="800" height="1000" data-primary style="object-position:50% 42%" />
+                  </div>
+                  <div class="ht-thumbs" role="tablist" aria-label="Product images">
+                    <button type="button" class="ht-thumb is-on" data-src="/hearth/bowl-primary.jpg" data-alt="Speckled stoneware bowl, sample." aria-label="Main bowl"><img src="/hearth/bowl-primary.jpg" alt="" width="800" height="1000" loading="lazy" /></button>
+                    <button type="button" class="ht-thumb" data-src="/hearth/bowl-detail.jpg" data-alt="Ash glaze detail, sample." aria-label="Glaze detail"><img src="/hearth/bowl-detail.jpg" alt="" width="720" height="900" loading="lazy" /></button>
+                    <button type="button" class="ht-thumb" data-src="/hearth/bowl-context.jpg" data-alt="Bowl in table setting, sample." aria-label="On the table"><img src="/hearth/bowl-context.jpg" alt="" width="720" height="900" loading="lazy" /></button>
+                  </div>
                 </div>
                 <div class="ht-buy">
-                  <p class="ht-flag">Sample SKU · not for sale</p>
+                  <p class="ht-sku-flag">Sample SKU · not for sale</p>
                   <h3>Stone bowl</h3>
-                  <p>Ash glaze, iron specks, a rim you can feel. Product page hierarchy without a reviews app or a fake countdown.</p>
-                  <button type="button" class="btn btn-solid" data-ht-cart>Add to cart</button>
+                  <p class="ht-material-line">Ash glaze, iron specks, a rim you can feel. Hierarchy without a reviews app.</p>
+                  <p class="ht-price"><span>$54</span><small>sample · USD</small></p>
+                  <button type="button" class="btn btn-solid ht-atc" data-ht-cart>Add to cart</button>
+                  <p class="ht-ship">One bowl, one place setting. Sample store — checkout is intentionally dead.</p>
+                  <dl class="ht-meta">
+                    <div><dt>Material</dt><dd>Stoneware · ash glaze</dd></div>
+                    <div><dt>Care</dt><dd>Dishwasher safe · avoid thermal shock</dd></div>
+                    <div><dt>Made for</dt><dd>Daily use · the quiet table</dd></div>
+                  </dl>
                 </div>
+              </div>
+            </div>
+
+            <div class="ht-sticky-atc" id="ht-sticky-atc" hidden>
+              <div class="ht-sticky-inner">
+                <span id="ht-sticky-label">Sample SKU</span>
+                <button type="button" class="btn btn-solid" data-ht-cart>Add to cart</button>
               </div>
             </div>
             <p class="ht-note" id="ht-note" hidden></p>
